@@ -1,0 +1,115 @@
+@use './colors' as *;
+/*hero section start*/
+
+.hero--section{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3em;
+    h1{
+        color: $Very-Dark-Blue;
+        font-size:  1.875rem;
+        font-weight: 500;
+        line-height: 40px; 
+        letter-spacing: -0.094px;
+        margin-top: 1.6em;
+        margin-bottom: .533em;
+    }
+    .info{
+        
+        margin-bottom: 2.8em;
+    }
+    .btns--container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.875em ;
+    }
+    button{
+        padding: 0.713em 1.148em .713em 1.212em;
+    }
+    
+    .firefox--btn{
+        background: #F7F7F7;
+        color:$Very-Dark-Blue;
+        border-color: #F7F7F7;
+    }
+    
+    
+    
+}
+.snd--child{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    img{
+        grid-area: 1 / 1;
+    }
+}
+.shape{
+    width: 162%;
+    height: 80%;
+    background-color: $soft-blue;
+    border-radius: 316.5px;
+    
+    grid-area: 1 / 1;
+    transform: translate(10%, 26%);
+    z-index: -1;
+}
+
+@media(min-width:800px){
+
+   
+    .info{
+        width: 61%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media(min-width:860px) {
+    .main--container{
+        margin-top: 12em;
+    }
+    .hero--section{
+        flex-direction: initial;
+        align-items: center;
+        text-align: left;
+        h1{
+            font-size: 3rem;
+            line-height: 52px; 
+            letter-spacing: -0.15px;
+            margin-top: 0;
+            margin-bottom: .5em;
+        }
+        .snd--child{
+            width: 100%;
+        }
+        .info{
+            width: auto;
+            margin-bottom: 1.77777em;
+            
+        }
+        .btns--container{
+            justify-content: initial;
+            gap: 1em;
+        }
+    }
+}
+@media(min-width:1200px){
+    .hero--section{
+        gap: 0em;
+        .info{
+            width: 30em;
+        }
+    }
+    .snd--child img{
+        width:121%
+    }
+}
+
+@media(min-width:1300px){
+    .hero--section{
+        gap: 4.21875em;
+    }
+}
+/*hero section end*/

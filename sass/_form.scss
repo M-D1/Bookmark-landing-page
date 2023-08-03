@@ -1,0 +1,124 @@
+@use './colors' as *;
+.form--container{
+    background-color: $soft-blue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h4{
+        color: #FFF;
+        line-height: 28px;
+        width: 82%;
+        margin: 0 auto 1.333em auto;
+    }
+    p{
+        color: #FFF;
+        font-size: .75rem;
+        font-weight: 500;
+        line-height: 40px; 
+        letter-spacing: 4.615px;
+        order: -1;
+        padding-top: 5em;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .input--container{
+        z-index: 3;
+        display: grid;
+        place-items:center;
+    
+    }
+    input{
+        color: rgba($Very-Dark-Blue, 0.25);
+        font-size: .875rem;
+        line-height: 28px; 
+        letter-spacing: 0.25px;
+        padding: .713em 8.929em .713em 1.426em;
+        margin-bottom: 1.852em;
+        border: none;
+        border-radius: 5px;
+        width: 22.214285714285715em;
+        grid-area: 1 / 1;
+      
+    
+    }
+    img{
+        grid-area:  1 / 1;
+        z-index: 2;
+        transform: translate(8.4375rem, -0.75rem);
+        display: none;
+    }
+    .error{
+        position: absolute;
+        background: $light-red;
+        top: -1%;
+        width: 19.6875rem;
+        padding: 3.25em 7.9375em 0.375em 0px;
+        z-index: 1;
+        border-radius: 5px;
+        display: none;
+        p{
+            font-style: italic;
+            font-size:  0.625em;
+            padding: 0;
+            margin: 0;
+            width: 98%;
+            letter-spacing: .25px;
+            line-height: normal;
+        }
+    }
+    .btn--same--styles{
+        padding: .713em 8.286em .713em 8.358em ;
+        margin-bottom: 4.26em;
+        width: 22.214285714285715em;
+        background-color: $light-red;
+        border-color: $light-red;
+        
+    }
+   
+    
+    }
+@media(min-width:860px){
+    .form--container{
+        .title--same--styles{
+            width:  12.75em;
+            margin-top:  0.75em;
+            margin-bottom: 1.125em;
+        }
+        p{
+            font-size: 0.8125rem;
+            letter-spacing: -0.1px;
+        }
+        form{
+            flex-direction: row;
+            justify-content: center;
+            gap: 2.5em;
+            padding-bottom: 4.5em;
+            position: relative;
+        }
+        img{
+            transform: translate(8.4375rem, 0);
+        }
+        .error{
+            transform: translateX(-5.125em);
+            width: 19.875rem;
+        }
+        input{
+            margin: 0;
+        }
+        .btn--same--styles{
+            margin: 0;
+            width: auto;
+            padding-left: 1.712em;
+            padding-right: 1.712em;
+           
+            &:hover,&:focus{
+                background-color: #fff;
+                color:$light-red;
+            }
+        }
+    }
+}

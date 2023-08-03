@@ -1,0 +1,73 @@
+@use './colors' as *;
+
+footer{
+    text-align: center;
+ 
+    .first--child{
+        background-color: $navy-blue;
+       
+    }
+    .fi{
+        padding-top: 2.5em;
+    }
+    ul{
+        margin-top: 2.4375em;
+        margin-bottom: 3em;
+
+    }
+    li{
+        font-size:  0.9375rem;
+        margin-bottom: 2.1333em;
+        line-height: 17px; 
+        letter-spacing: 1.731px;
+        text-transform: uppercase;
+        a{
+            color: #FFF;
+
+        }
+    }
+    .t{
+        padding-bottom: 2.6875em;
+
+    }
+    
+}
+
+@media(min-width:860px){
+    footer{
+        .first--child{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em 2.3125em;
+
+        }
+        .fi{
+            display: flex;
+            align-items: center;
+            gap: 4.0625em;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            margin: 0;
+        }
+        li{
+            margin: 0 2.9333em 0 0;
+            font-size: .8125em;
+            letter-spacing: 0.03125em;
+        }
+        .t{
+            padding: 0;
+        }
+
+    }
+}
+@media(min-width:1200px){
+    footer{
+    .first--child{
+        padding-left: 10.3125em;
+        padding-right: 10.3125em;
+    }
+    }
+}

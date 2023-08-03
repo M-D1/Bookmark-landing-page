@@ -1,0 +1,78 @@
+@use './colors' as *;
+/*FAQs start*/
+
+.FAQs--container{
+    .title--same--styles{
+       
+        line-height: 30px; 
+       
+        margin-bottom: .66em;
+    }
+    .info{
+     
+        margin-bottom: 4.2667em;
+        
+    }
+    .FAQs{
+        text-align: left;
+        border-bottom: 1px solid rgba($color: $navy-blue, $alpha: 0.1476934552192688);
+        margin-bottom: 1.5em;
+    }
+    .question--container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: .75em;
+    }
+    .arrow{
+        transition: all .3s ease-in-out;
+        &.active{
+            transform: rotate(180deg);
+            .str{
+                stroke: $light-red;
+
+            }
+        }
+    }
+    .question{
+        color: #242A45;
+        font-size: .9375rem;
+        line-height: 32px; 
+        pointer-events: none;
+    }
+    .answer{
+        color: #242A45;
+        font-size: .9375rem;
+        line-height: 30px;
+        letter-spacing: 0.141px;
+        margin-top: 26px;
+        display: none;
+        pointer-events: none;
+        
+    }
+    button{
+        margin-top: 3.424em;
+        padding: .713em 1.72em .713em 1.72em;
+        margin-bottom: 8.786em;
+       
+    }
+
+}
+@media(min-width:860px){
+    .FAQs--container{
+        .info{
+            width: 30em;
+        }
+        
+        width: 70%;
+        margin:  9.3125em auto 0 auto;
+        .question{
+            font-size: 1.125rem;
+        }
+        .answer{
+            width:33.75em;
+        }
+    }
+
+}
+/*FAQs end*/

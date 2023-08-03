@@ -1,0 +1,111 @@
+@use './colors' as *;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+ul{
+    list-style: none;
+}
+button,
+.change p,
+.question--container{
+    cursor: pointer;
+}
+button,a,.change p{
+    transition: all .3s ease-in-out;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+
+.main--container{
+    padding: 0 2em;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 5.0625em;
+}
+
+.info{
+    color: $Very-Dark-Blue;
+    font-size: 0.9375em;
+    line-height: 25px; 
+    opacity: .5;
+}
+.title--same--styles{
+    color: $Very-Dark-Blue;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 52px; 
+    letter-spacing: -0.075px;
+}
+
+.btn--same--styles{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 28px; 
+    letter-spacing: 0.25px;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20);
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: $soft-blue;
+    color: #fff;
+}
+
+@media(min-width:860px){
+    .title--same--styles{
+        font-size: 2rem;
+        letter-spacing: -0.1px;
+    }
+    .info{
+        font-size: 1.125rem;
+        line-height: 28px;
+    }
+}
+
+@media(min-width:1200px){
+    .main--container{
+        padding: 0  10.3125em;
+    }
+}
+
+/*hover state and focus state*/
+button{
+    &:hover,
+    &:focus{
+        background-color: #fff;
+        color: $soft-blue;
+    }
+}
+
+.hero--section{
+    .firefox--btn{
+        &:hover,&:focus{
+            border-color: $Very-Dark-Blue;
+        }
+    }
+}
+.change{
+    p{
+        &:hover,&:focus{
+            color: $light-red;
+        }
+    }
+}
+
+
+    
+
+.form--container{
+    .btn--same--styles{
+        &:focus,&:hover{
+            background-color: #fff;
+            color: $light-red;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+@use './colors' as *;
+/* features section start*/
+.features{
+    .title--same--styles{
+        margin-top: 5.8333em;
+
+    }
+  
+    .info{
+        margin-bottom: 2.665em;
+    }
+}
+.change{
+    p{
+        color: $navy-blue;
+        font-size: 1rem;
+        line-height: 17px; 
+        letter-spacing: 0.533px;
+        border-top: 1px solid rgba($navy-blue, 0.20);
+        padding: 1.25em 0;
+    }
+
+   
+    
+    span{
+        height: 4px;
+        background: $light-red;
+        margin: 0 auto;
+    }
+    .s1{
+        width: 143px;
+        display: block;
+
+    }
+    .s2{
+        width: 120px;
+
+    }
+    .s3{
+        width: 90px;
+
+    }
+    
+
+}
+.list--of--features{
+    padding-top: 4.506875em;
+    border-top: 1px solid rgba($Very-Dark-Blue, 0.20);
+    display: flex;
+    flex-direction: column-reverse;
+    .title--same--styles{
+        margin-top: 16%;
+    }
+    .info{
+        
+        margin-bottom: 1em;
+    }
+    .img{
+        width: 100%;
+    }
+    .shape{
+        transform: translate(-47%, 18%);
+        height: 99%;
+    }
+    
+button{
+    padding: .713em 1.72em .713em 1.72em;
+    margin-bottom: 5.5em;
+}
+}
+
+@media(min-width:700px){
+    .list--of--features{
+        .img{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+   
+}
+
+@media(min-width:860px){
+    .features{
+
+        .title--same--styles{
+            margin-top: 3.33335em;
+        }
+        .info{
+            margin-bottom: 4em;
+            width:30em
+
+        }
+    }
+    .change{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5.65625em;
+        p{
+            border-top: none;
+        }
+      
+       
+    }
+    .list--of--features{
+        text-align: left;
+        flex-direction: row-reverse;
+        gap: 3em;
+        align-items: center;
+        padding-top: 4.5125em;
+        .info{
+            width: 24.72222222222222em;
+        }
+        .snd--child{
+            width: 100%;
+        }
+        .img{
+            width: 100%;
+        }
+    }
+    
+}
+
+@media(min-width:1200px){
+    .list--of--features{
+        border: none;
+        gap: 4em;
+        margin-left: -4em;
+    }
+    .change{
+        border-bottom: 1px solid rgba($Very-Dark-Blue, 0.20);
+        width: 45.625em;
+        margin: 0 auto;
+        .s{
+            width:  15.1875rem;
+        }
+    }
+}
+@media(min-width:1300px){
+    .list--of--features{
+        gap: 7.8125em;
+    }
+}
+/* features section end*/
+
