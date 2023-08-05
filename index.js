@@ -7,7 +7,7 @@ const spanTag = document.getElementsByClassName('span')
 const h3 = document.querySelector('.list--of--features h3')
 const listOfFeaturesP = document.querySelector('.list--of--features p')
 const listOfFeaturesImg = document.querySelector('.list--of--features img')
-const FAQs = document.querySelector('.FAQs')
+const FAQs = document.querySelectorAll('.FAQs')
 
 const shapeInList = document.querySelector('.list--of--features .shape')
 
@@ -21,13 +21,7 @@ const pError = document.querySelector('.error p')
 
 
 
-// console.log(h3)
-// console.log(listOfFeaturesP)
-// console.log(listOfFeaturesImg)
 
-
-
-// const p = document.querySelector('change span')
 
 
 menu.addEventListener('click',function(){
@@ -45,9 +39,7 @@ document.addEventListener('click',function(e){
         handleClick(e.target.dataset.num, span)
 
     }
-    else if(e.target.dataset.div){
-        triggeringAns(e.target.dataset.div)
-    }
+   
 })
 function remove(){
     for(const s of spanTag){
@@ -61,7 +53,7 @@ function remove(){
 }
 function handleClick(id,span){
     remove()
-    console.log(shapeInList)
+    
  
     const p = document.getElementById(id)
 
@@ -129,22 +121,14 @@ function handleClick(id,span){
 }
 
 
-function triggeringAns(dataAttr){
-    const parent = document.querySelector(`[data-div = ${dataAttr}]`).parentElement
-    
-    parent.addEventListener('click',function(){
-        const arrow = parent.querySelector('.arrow')
-        const answer = parent.querySelector('.answer')
 
-        arrow.classList.toggle('active')
-        if(arrow.classList.contains('active')){
-            answer.style.display = 'block'
-        }else{
-            answer.style.display = 'none'
-        }
+
+FAQs.forEach(f =>{
+    console.log(f)
+    f.addEventListener('click',function(){
+        f.classList.toggle('active')
     })
-    
-}
+})
 
 function handleError(message ,width){
     error.style.display = 'block'
@@ -171,8 +155,6 @@ function validEmail(emailValue){
 
 form.addEventListener('submit',function(e){
     e.preventDefault()
-    
-    console.log(email.value)
     validEmail(email.value)
 })
 

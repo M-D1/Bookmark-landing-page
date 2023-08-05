@@ -17,6 +17,19 @@
         text-align: left;
         border-bottom: 1px solid rgba($color: $navy-blue, $alpha: 0.1476934552192688);
         margin-bottom: 1.5em;
+        &.active{
+            .answer{
+                display: block;
+            }
+            .arrow{
+                transform: rotate(180deg);
+                .str{
+                    stroke: $light-red;
+    
+                }
+            }
+        }
+
     }
     .question--container{
         display: flex;
@@ -26,19 +39,12 @@
     }
     .arrow{
         transition: all .3s ease-in-out;
-        &.active{
-            transform: rotate(180deg);
-            .str{
-                stroke: $light-red;
-
-            }
-        }
     }
     .question{
         color: #242A45;
         font-size: .9375rem;
         line-height: 32px; 
-        pointer-events: none;
+        // pointer-events: none;
     }
     .answer{
         color: #242A45;

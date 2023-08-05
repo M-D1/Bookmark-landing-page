@@ -109,3 +109,25 @@ button{
         }
     }
 }
+
+.test > div{
+    display: flex;
+    justify-content: space-around;
+    &:hover{
+        .question{
+            color: $light-red;
+        }
+    }
+  
+    margin-bottom: 2em;
+   
+}
+.FAQs{
+    .question--container{
+        &:hover{
+            .question{
+                color: $light-red;
+            }
+        }
+    }
+}

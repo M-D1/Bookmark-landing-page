@@ -94,6 +94,19 @@ button:hover, button:focus {
   color: #FA5959;
 }
 
+.test > div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+.test > div:hover .question {
+  color: #FA5959;
+}
+
+.FAQs .question--container:hover .question {
+  color: #FA5959;
+}
+
 /*mobile design*/
 /*Header start*/
 header {
@@ -541,6 +554,15 @@ nav button {
   border-bottom: 1px solid rgba(36, 42, 69, 0.1476934552);
   margin-bottom: 1.5em;
 }
+.FAQs--container .FAQs.active .answer {
+  display: block;
+}
+.FAQs--container .FAQs.active .arrow {
+  transform: rotate(180deg);
+}
+.FAQs--container .FAQs.active .arrow .str {
+  stroke: #FA5959;
+}
 .FAQs--container .question--container {
   display: flex;
   justify-content: space-between;
@@ -550,17 +572,10 @@ nav button {
 .FAQs--container .arrow {
   transition: all 0.3s ease-in-out;
 }
-.FAQs--container .arrow.active {
-  transform: rotate(180deg);
-}
-.FAQs--container .arrow.active .str {
-  stroke: #FA5959;
-}
 .FAQs--container .question {
   color: #242A45;
   font-size: 0.9375rem;
   line-height: 32px;
-  pointer-events: none;
 }
 .FAQs--container .answer {
   color: #242A45;
