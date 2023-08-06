@@ -251,7 +251,7 @@ nav button {
 }
 @media (min-width: 1200px) {
   header {
-    padding: 3.75em 10.3125em 0 10.6875em;
+    padding: 2.7em 10.3125em 0 10.6875em;
   }
 }
 /*Header end*/
@@ -260,6 +260,9 @@ nav button {
   display: flex;
   flex-direction: column-reverse;
   gap: 3em;
+}
+.hero--section .hero--img {
+  width: "100%";
 }
 .hero--section h1 {
   color: hsl(229, 31%, 21%);
