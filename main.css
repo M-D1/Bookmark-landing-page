@@ -253,6 +253,12 @@ nav button {
   header {
     padding: 2.5em 10.3125em 0 10.6875em;
   }
+  header li {
+    width: 5.7692307692em;
+  }
+  .logo img {
+    width: 9.3125em;
+  }
 }
 /*Header end*/
 /*hero section start*/

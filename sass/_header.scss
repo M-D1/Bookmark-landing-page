@@ -183,7 +183,17 @@ nav{
 @media(min-width:1200px){
     header{
         padding: 2.5em 10.3125em 0 10.6875em;
+        li{
+            width: 5.769230769230769em;
+        }
+
     }
+    .logo{
+        img{
+            width: 9.3125em;
+        }
+    }
+
 }
 /*Header end*/
 
