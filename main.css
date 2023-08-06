@@ -252,9 +252,13 @@ nav button {
 @media (min-width: 1200px) {
   header {
     padding: 2.5em 10.3125em 0 10.6875em;
+    justify-content: initial;
   }
   header li {
     width: 5.7692307692em;
+  }
+  .logo {
+    margin-right: 31.375em;
   }
   .logo img {
     width: 9.3125em;
