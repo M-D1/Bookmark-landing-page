@@ -28,7 +28,7 @@ header{
         transition: all .3s ease-in-out;
 
         
-        background-color:$navy-blue;
+        background-color:$Very-Dark-Blue;
         &:first-child{
             top: 0;
         }
@@ -77,7 +77,7 @@ nav{
     transition: all .5s ease-in-out;
     min-height: 109vh;
     width: 100%;
-    background: $navy-blue;
+    background: $Very-Dark-Blue;
     z-index: -1;
     padding: 0 2em;
 
@@ -138,7 +138,7 @@ nav{
         }
         li{
             a{
-                color: $navy-blue;
+                color: $Very-Dark-Blue;
     
                 &:hover{
                     color: $light-red;
@@ -153,7 +153,7 @@ nav{
         button{
             border-radius: 5px;
             background: $light-red;
-            box-shadow: 0px 8px 8px -4px rgba($navy-blue, 0.20);
+            box-shadow: 0px 8px 8px -4px rgba($Very-Dark-Blue, 0.20);
             padding: .921em 2.47em .841em 2.64em;
             color:#FFF;
             border: 2px solid $light-red;

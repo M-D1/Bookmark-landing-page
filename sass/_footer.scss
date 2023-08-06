@@ -1,10 +1,11 @@
 @use './colors' as *;
+/* footer start*/
 
 footer{
     text-align: center;
  
     .first--child{
-        background-color: $navy-blue;
+        background-color: $Very-Dark-Blue;
        
     }
     .fi{
@@ -29,6 +30,19 @@ footer{
     .t{
         padding-bottom: 2.6875em;
 
+    }
+
+
+    p.attribution{
+        color: white;
+        font-size: 0.7em;
+        line-height: 1.6;
+        background: $Very-Dark-Blue;
+        a{
+            color: white;
+            text-decoration: underline;
+        }
+        padding-bottom: 1em;
     }
     
 }
@@ -71,3 +85,5 @@ footer{
     }
     }
 }
+
+/* footer end*/

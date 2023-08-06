@@ -15,7 +15,7 @@
     }
     .FAQs{
         text-align: left;
-        border-bottom: 1px solid rgba($color: $navy-blue, $alpha: 0.1476934552192688);
+        border-bottom: 1px solid rgba($color: $Very-Dark-Blue, $alpha: 0.1476934552192688);
         margin-bottom: 1.5em;
         &.active{
             .answer{
@@ -44,17 +44,16 @@
         color: #242A45;
         font-size: .9375rem;
         line-height: 32px; 
-        // pointer-events: none;
+       
     }
     .answer{
-        color: #242A45;
+        color: $Very-Dark-Blue;
         font-size: .9375rem;
         line-height: 30px;
         letter-spacing: 0.141px;
         margin-top: 26px;
         display: none;
-        pointer-events: none;
-        
+      
     }
     button{
         margin-top: 3.424em;

@@ -1,4 +1,5 @@
 @use './colors' as *;
+/* download section start*/
 .download{
 
     .type--of-browser{
@@ -56,18 +57,11 @@
         .type--of-browser{
             width: 33%;
             &:nth-child(2){
-                // position: absolute;
-                // left: 279px;
-                // top: 17%;
                 transform: translateY(17%);
 
             }
             &:last-child{
-                // position: absolute;
-                // left: 558px;
-                // top: 32%;
                 transform: translateY(32%);
-
             }
             
         }
@@ -83,3 +77,4 @@
         margin-top: 10%;
     }
 }
+/* download section end */

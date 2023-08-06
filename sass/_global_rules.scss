@@ -57,6 +57,8 @@ a{
     color: #fff;
 }
 
+
+
 @media(min-width:860px){
     .title--same--styles{
         font-size: 2rem;
@@ -110,22 +112,22 @@ button{
     }
 }
 
-.test > div{
-    display: flex;
-    justify-content: space-around;
-    &:hover{
-        .question{
-            color: $light-red;
-        }
-    }
-  
-    margin-bottom: 2em;
-   
-}
+
 .FAQs{
     .question--container{
         &:hover{
             .question{
+                color: $light-red;
+            }
+        }
+    }
+}
+
+footer{
+    li{
+        a{
+            &:hover,
+            &:focus{
                 color: $light-red;
             }
         }
