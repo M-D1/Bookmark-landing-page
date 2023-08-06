@@ -326,7 +326,7 @@ nav button {
 }
 @media (min-width: 860px) {
   .main--container {
-    margin-top: 7.96875em;
+    margin-top: 6.96875em;
   }
   .hero--section {
     flex-direction: initial;
