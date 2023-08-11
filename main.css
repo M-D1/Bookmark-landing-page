@@ -268,7 +268,7 @@ nav button {
   gap: 3em;
 }
 .hero--section .hero--img {
-  width: "100%";
+  width: 100%;
 }
 .hero--section h1 {
   color: hsl(229, 31%, 21%);
